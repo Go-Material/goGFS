@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"gfs"
-	"gfs/util"
-	log "github.com/Sirupsen/logrus"
+	"goGFS/src/gfs"
+	"goGFS/src/gfs/util"
+	log "github.com/sirupsen/logrus"
 )
 
 // chunkManager manges chunks

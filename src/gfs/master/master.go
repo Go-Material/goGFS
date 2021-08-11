@@ -3,15 +3,15 @@ package master
 import (
 	"encoding/gob"
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"net"
 	"net/rpc"
 	"os"
 	"path"
 	"time"
 
-	"gfs"
-	"gfs/util"
+	"goGFS/src/gfs"
+	"goGFS/src/gfs/util"
 )
 
 // Master Server struct

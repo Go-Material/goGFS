@@ -2,8 +2,7 @@ package chunkserver
 
 import (
 	"fmt"
-	log "github.com/Sirupsen/logrus"
-	//"math/rand"
+	log "github.com/sirupsen/logrus"
 	"encoding/gob"
 	"io"
 	"net"
@@ -12,10 +11,9 @@ import (
 	"path"
 	"sync"
 	"time"
-	//"strings"
 
-	"gfs"
-	"gfs/util"
+	"goGFS/src/gfs"
+	"goGFS/src/gfs/util"
 )
 
 // ChunkServer struct

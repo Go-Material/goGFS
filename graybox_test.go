@@ -1,15 +1,15 @@
 package main
 
 import (
-	"gfs"
-	"gfs/chunkserver"
-	"gfs/client"
-	"gfs/master"
-	"gfs/util"
+	"goGFS/src/gfs"
+	"goGFS/src/gfs/chunkserver"
+	"goGFS/src/gfs/client"
+	"goGFS/src/gfs/master"
+	"goGFS/src/gfs/util"
 	"reflect"
 
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"io"
 	"io/ioutil"
 	//"math/rand"

@@ -1,11 +1,11 @@
 package client
 
 import (
-	"gfs"
-	"gfs/util"
+	"goGFS/src/gfs"
+	"goGFS/src/gfs/util"
 	"sync"
 	"time"
-	//log "github.com/Sirupsen/logrus"
+	//log "github.com/sirupsen/logrus"
 )
 
 type leaseBuffer struct {

@@ -1,19 +1,18 @@
 package terasort
 
 import (
-
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 
+	"io"
+	"math"
+	"math/rand"
 	"net"
 	"net/rpc"
-    "math"
-    "math/rand"
-    "sort"
-    "io"
 	"os"
+	"sort"
+	"strings"
 	"sync"
-    "strings"
 )
 
 type Master struct {
@@ -31,7 +30,7 @@ const (
 )
 
 func NewMaster(address, rootDir string) *Master {
-	m = &Master{
+	m := &Master{
 		address:    address,
         rootDir:    rootDir,
 		workerChan: make(chan string, WorkerChanSize),
